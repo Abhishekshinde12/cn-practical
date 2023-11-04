@@ -1,0 +1,63 @@
+Network Sniffing -  to acces network related info between devices to gain profits or use hacked
+data for illegal purposes is known as network sniffing. This method is carried out by intecepting the 
+packets that are sent over the network by either using software or hardware means.
+
+Tools used for it 
+1. Auvik - intelligent analysis for network packets
+2. Wireshark - Best if you need to look for protocol related data
+3. Solar Winds Network Packet Sniffer - used for perfomance management of the network.
+
+
+Wireshark - designed to track network packets and through the use of different filter options available
+in the software. used to analyse network packets , troubleshoot network issues , check malicious
+and hacking possibilities.
+
+wireshark
+blue fin - to get the data packets on the network / also to start recapturing the packets
+red button - to stop getting the data packets on the network
+
+
+
+
+At home page it depicts the networks connected to the device and the graph  shows the represent 
+traffic on  the network.
+
+we can click on the network to get detailed info about it .
+The detailed part there represents - detailed info about different transactions that have been made.
+and the random aplhanumeric values represent garbage/raw data.
+
+Filter - to get some specific data
+here if we type software related keywords the filter color is shown in green
+here if we type keywords that are not related to the software / error related keywords then 
+it's shown in red.
+
+1).
+to get data about specific protocol type the protocol name in the filter box.
+"contains" keyword - used to filter packets based on the content of the packet's data. Allows you to
+specify sequence of bytes or a string that you want to search for within the packet data. And the 
+bytes should be given inside " " 
+eg. contains "example" - display packets that have the word example in their data
+
+2).
+ip.addr = ip address ----> display only the packets where the source or destination IP address match
+the specified <ip address>
+
+
+3). to get the website that the user is browsing
+filter = http
+then if the user visits a website which uses HTTPS (secure website) then it will not be able  to view
+host address or URL in the clear text because HTTPS encrypts the data exchanged between the 
+client and the web browser. you need encryption keys or TLS/SSL handshake for access
+however if the user visits an insecure website (doesn't use HTTPS) then we can simply click on any
+one of the HTTP packet and click follow , and then HTTP stream and we will be able to get the 
+hsot address from there.
+
+
+4) insecure website
+we can access the username and the password from here.
+then we can go to Hypertext Protocol and we get the username and the password
+
+
+
+
+
